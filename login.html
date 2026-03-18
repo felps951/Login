@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="box">
+    <h2>Entrar</h2>
+
+    <form method="POST">
+        <input type="text" name="usuario" placeholder="Usuário">
+        <input type="password" name="senha" placeholder="Senha">
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    {% if erro %}
+        <p class="erro">{{ erro }}</p>
+    {% endif %}
+
+    <a href="/cadastro">Criar conta</a>
+</div>
+
+</body>
+</html>
